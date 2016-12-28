@@ -20,11 +20,11 @@ object SampleProject_SampleConfig : BuildType({
                 echo ${'$'}SHOULD_FAIL
                 if [ ${'$'}SHOULD_FAIL = 1 ];
                 then
-                	echo "Piffle"
+                	echo "Apple"
                  exit 1
                 fi
 
-                echo "Arbitrary"
+                echo "Banananana"
                 exit 0
             """.trimIndent()
         }
