@@ -7,4 +7,5 @@
   :plugins [[lein-teamcity "0.2.2"]]
   :main ^:skip-aot random-test-fails.core
   :target-path "target/%s"
+  :monkeypatch-clojure-test false
   :profiles {:uberjar {:aot :all}})
