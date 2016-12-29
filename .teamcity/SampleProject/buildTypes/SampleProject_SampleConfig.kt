@@ -23,10 +23,13 @@ object SampleProject_SampleConfig : BuildType({
                 	echo "Apple"
                  exit 1
                 fi
-
+                
                 echo "Banananana"
                 exit 0
             """.trimIndent()
+        }
+        script {
+            scriptContent = "echo Hello"
         }
     }
 })

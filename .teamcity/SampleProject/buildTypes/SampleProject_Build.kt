@@ -11,11 +11,6 @@ import jetbrains.buildServer.configs.kotlin.v10.triggers.VcsTrigger.*
 import jetbrains.buildServer.configs.kotlin.v10.triggers.schedule
 import jetbrains.buildServer.configs.kotlin.v10.triggers.vcs
 
-val sayHello = jetbrains.buildServer.configs.kotlin.v10.buildSteps.ScriptBuildStep({
-    name = "Say Hello"
-    scriptContent = "echo hello"
-})
-
 object SampleProject_Build : BuildType({
     uuid = "b4d78b46-439d-4975-a200-ecd8301f8746"
     extId = "SampleProject_Build"
@@ -31,7 +26,6 @@ object SampleProject_Build : BuildType({
             name = "Run Tests"
             scriptContent = "lein test"
         }
-        sayHello
     }
 
     triggers {
@@ -42,8 +36,8 @@ object SampleProject_Build : BuildType({
                 minutes = "0/5"
             }
             triggerBuild = always()
-            withPendingChangesOnly = false
             param("revisionRule", "lastFinished")
+            param("triggerBuildWithPendingChangesOnly", "")
             param("dayOfWeek", "Sunday")
         }
     }
