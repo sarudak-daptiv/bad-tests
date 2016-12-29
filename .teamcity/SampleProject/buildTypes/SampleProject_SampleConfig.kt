@@ -5,6 +5,11 @@ import jetbrains.buildServer.configs.kotlin.v10.buildSteps.ScriptBuildStep
 import jetbrains.buildServer.configs.kotlin.v10.buildSteps.ScriptBuildStep.*
 import jetbrains.buildServer.configs.kotlin.v10.buildSteps.script
 
+val sayHelloAgain = ScriptBuildStep({
+    name = "Say it again"
+    scriptContent = "echo HelloAgain"
+})
+
 object SampleProject_SampleConfig : BuildType({
     uuid = "a01bf2c6-3ecc-4196-985d-6700e5773792"
     extId = "SampleProject_SampleConfig"
@@ -31,5 +36,6 @@ object SampleProject_SampleConfig : BuildType({
         script {
             scriptContent = "echo Hello"
         }
+        sayHelloAgain
     }
 })
