@@ -36,6 +36,6 @@ object SampleProject_SampleConfig : BuildType({
         script {
             scriptContent = "echo Hello"
         }
-        sayHelloAgain
+        script{sayHelloAgain}
     }
 })
