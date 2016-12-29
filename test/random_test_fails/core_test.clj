@@ -15,6 +15,10 @@
   (testing "This usually succeeds"
     (is (> (rand-int 100) 15))))
 
+(deftest half-successful
+  (testing "This test is successful half the time"
+    (is (> (rand-int 100) 49))))
+
 (deftest rarely-successful
-  (testing "This almost always succeeds"
-    (is (> (rand-int 100) 40))))
+  (testing "This rarely succeeds"
+    (is (> (rand-int 100) 80))))
