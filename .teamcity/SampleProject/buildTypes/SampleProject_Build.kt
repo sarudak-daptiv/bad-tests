@@ -10,6 +10,7 @@ import jetbrains.buildServer.configs.kotlin.v10.triggers.VcsTrigger
 import jetbrains.buildServer.configs.kotlin.v10.triggers.VcsTrigger.*
 import jetbrains.buildServer.configs.kotlin.v10.triggers.schedule
 import jetbrains.buildServer.configs.kotlin.v10.triggers.vcs
+import SampleProject.buildSteps.*
 
 object SampleProject_Build : BuildType({
     uuid = "b4d78b46-439d-4975-a200-ecd8301f8746"
@@ -22,6 +23,7 @@ object SampleProject_Build : BuildType({
     }
 
     steps {
+        script(sayHello)
         script {
             name = "Run Tests"
             scriptContent = "lein test"
