@@ -12,7 +12,7 @@ object SampleProject_SampleConfig : BuildType({
     name = "SampleConfig"
 
     steps {
-        script(sayHello)
+        script(sayGoodbye)
         script {
             scriptContent = """
                 #!/bin/bash

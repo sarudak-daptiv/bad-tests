@@ -4,7 +4,7 @@ import jetbrains.buildServer.configs.kotlin.v10.*
 import jetbrains.buildServer.configs.kotlin.v10.buildSteps.ScriptBuildStep
 import jetbrains.buildServer.configs.kotlin.v10.buildSteps.ScriptBuildStep.*
 
-val sayHello = ScriptBuildStep({
-    name = "Say hello"
-    scriptContent = "echo Hello"
+val sayGoodbye = ScriptBuildStep({
+    name = "Say goodbye"
+    scriptContent = "echo Goodbye"
 })

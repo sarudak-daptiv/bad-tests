@@ -23,7 +23,7 @@ object SampleProject_Build : BuildType({
     }
 
     steps {
-        script(sayHello)
+        script(sayGoodbye)
         script {
             name = "Run Tests"
             scriptContent = "lein test"

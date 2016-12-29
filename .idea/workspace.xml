@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e53f3008-eda7-4058-8de4-182012d48a65" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.teamcity/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.teamcity/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/random_test_fails/core_test.clj" afterPath="$PROJECT_DIR$/test/random_test_fails/core_test.clj" />
-    </list>
+    <list default="true" id="e53f3008-eda7-4058-8de4-182012d48a65" name="Default" comment="" />
     <ignored path="bad-tests.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
